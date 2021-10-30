@@ -1,0 +1,21 @@
+.cards {
+    @extend .row, .row-cols-1, .row-cols-md-4;
+}
+
+.cards--col {
+    @extend .col, .mb-4;
+}
+
+.cards__card {
+    @extend .card;
+}
+
+.cards__card--border-primary {
+    background-color: $white;
+    @include card-border($primary);
+}
+
+.cards__card--border-inverted {
+    background-color: $primary;
+    @include card-border($white);
+}
