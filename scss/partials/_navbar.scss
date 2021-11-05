@@ -1,19 +1,19 @@
 .navbar {
     @extend .navbar, .navbar-expand-lg, .navbar-light, .bg-light;
 
-    .navbar__brand {
+    &__brand {
         @extend .navbar-brand;
     }
 
-    .navbar__menu {
+    &__menu {
         @extend .navbar-nav, .ml-auto
     }
     
-    .navbar__item {
+    &__item {
         @extend .nav-item;
     }
 
-    .navbar__item--active {
+    &__item--active {
         @extend .nav-item, .active
     }
 }
